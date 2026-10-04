@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock title %}
+
+{% block body %}
+  <main class="contact-page">
+    <section class="contact-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="section-label">Contact</p>
+            <h1>Let’s connect and build something great together.</h1>
+            <p class="lead">I’m available for new projects, collaborations, and opportunities. Feel free to reach out anytime.</p>
+
+            <div class="contact-card">
+              <div class="info-row">
+                <span class="info-label">Phone</span>
+                <span>7847014404</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Email</span>
+                <span>patrad554@gmail.com</span>
+              </div>
+              <div class="info-row">
+                <span class="info-label">Address</span>
+                <span>Bhadrak, Odisha 756100</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80" alt="Contact us" class="contact-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-message py-5 bg-light">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p class="section-label">Message</p>
+            <h2>Open to ideas, partnerships, and opportunities</h2>
+            <p>I enjoy working on meaningful digital projects that combine creativity, strategy, and clean execution. Whether you need a web solution, a portfolio, or a project consultation, I would be glad to hear from you.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .contact-page {
+        background: #f8f9fa;
+      }
+
+      .contact-hero {
+        padding: 80px 0 40px;
+        background: linear-gradient(135deg, #fdf2f8 0%, #ffffff 100%);
+      }
+
+      .section-label {
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #d63384;
+        font-weight: 700;
+        margin-bottom: 12px;
+        font-size: 0.8rem;
+      }
+
+      .contact-hero h1,
+      .contact-message h2 {
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: #111827;
+      }
+
+      .contact-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 24px 20px;
+        box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+        margin-top: 30px;
+      }
+
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 14px 0;
+        border-bottom: 1px solid #eef2f7;
+      }
+
+      .info-row:last-child {
+        border-bottom: none;
+      }
+
+      .info-label {
+        font-weight: 700;
+        color: #111827;
+      }
+
+      .contact-image {
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+      }
+    </style>
+  </main>
+{% endblock body %}

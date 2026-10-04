@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>{% block title %}My Project{% endblock title %}</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav me-auto">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+            <a class="nav-link" href="/about/">About</a>
+            <a class="nav-link" href="/services/">Services</a>
+            <a class="nav-link" href="/contact/">Contact</a>
+
+          </div>
+
+          <form class="d-flex search-box" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f8f9fa;
+      }
+
+      .custom-navbar {
+        background: linear-gradient(90deg, #111827 0%, #1f2937 100%);
+        padding: 16px 0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      .navbar-brand {
+        letter-spacing: 0.08em;
+        font-size: 1.4rem;
+      }
+
+      .navbar-nav .nav-link {
+        color: #f3f4f6;
+        font-weight: 600;
+        margin-right: 18px;
+        transition: 0.3s ease;
+      }
+
+      .navbar-nav .nav-link:hover,
+      .navbar-nav .nav-link.active {
+        color: #7dd3fc;
+      }
+
+      .search-box {
+        margin-left: 20px;
+      }
+
+      .search-box input {
+        min-width: 180px;
+      }
+    </style>
+
+    {% block body %}{% endblock body %}
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>

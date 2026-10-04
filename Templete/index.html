@@ -1,0 +1,239 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock title %}
+
+{% block body %}
+  <main class="container-fluid px-0">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://media.istockphoto.com/id/1340856012/photo/happy-businessmen-shaking-hands-on-a-meeting-in-the-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=NWrQfHNdkbwyeklUSt_xDDqD4GXAMnweRMaEmt4IHs8=" class="d-block w-100 hero-image" alt="Welcome slide">
+          <div class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 left-0 w-100">
+            <div class="text-center text-white hero-content">
+              <h1 class="display-4 fw-bold">Welcome to Patra Construction</h1>
+              <a class="btn btn-primary btn-lg" href="/about/" role="button">Learn more</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://media.istockphoto.com/id/2157253066/photo/a-white-two-story-house-with-a-grey-roof-it-has-a-front-yard-with-a-garden-and-a-driveway.webp?a=1&b=1&s=612x612&w=0&k=20&c=BiaCMGOfZUZxE_3LUbNY9Q-ugpI4IpG_te52O4A7n_o=" class="d-block w-100 hero-image" alt="Slide 2">
+          <div class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 left-0 w-100">
+            <div class="text-center text-white hero-content">
+              <h1 class="display-4 fw-bold">Beautiful Design</h1>
+              <p class="lead">A clean, modern homepage with image-based content.</p>
+              <a class="btn btn-success btn-lg" href="/contact/" role="button">Contact us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1600&q=80" class="d-block w-100 hero-image" alt="Slide 3">
+          <div class="carousel-caption d-flex align-items-center justify-content-center h-100 top-0 left-0 w-100">
+            <div class="text-center text-white hero-content">
+              <h1 class="display-4 fw-bold">Grow Your Business</h1>
+              <p class="lead">Create a strong digital presence with stylish content.</p>
+              <a class="btn btn-warning btn-lg text-dark" href="/services/" role="button">Our Services</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="fw-bold">Our Latest Work</h2>
+          <p class="text-muted">A few selected moments from our creative projects.</p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="gallery-item h-100">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" class="gallery-image" alt="Team meeting">
+              <div class="gallery-text">
+                <h5>Creative Team</h5>
+                <p>Projects built with innovation, planning, and strong collaboration.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="gallery-item h-100">
+              <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=800&q=80" class="gallery-image" alt="Office workspace">
+              <div class="gallery-text">
+                <h5>Modern Workspace</h5>
+                <p>Clean digital experiences designed to impress and perform.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-xl-4">
+            <div class="gallery-item h-100">
+              <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80" class="gallery-image" alt="Business planning">
+              <div class="gallery-text">
+                <h5>Business Growth</h5>
+                <p>Smart digital growth rooted in strategy, design, and execution.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-story py-5">
+      <div class="container">
+        <div class="row g-4 align-items-center feature-row">
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1200&q=80" alt="Construction site" class="feature-image">
+          </div>
+          <div class="col-lg-6">
+            <p class="section-tag">Our Approach</p>
+            <h3>Modern construction with quality and trust at every step.</h3>
+            <p>We create smart, durable, and elegant spaces with attention to detail, safety, and long-term value. Every project is planned to meet your vision and practical needs.</p>
+            <ul class="feature-list">
+              <li>Strong planning and transparent communication</li>
+              <li>High-quality materials and dependable craftsmanship</li>
+              <li>Timely delivery and professional execution</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row g-4 align-items-center feature-row second-row">
+          <div class="col-lg-6 order-lg-2">
+            <img src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=1200&q=80" alt="Interior design" class="feature-image">
+          </div>
+          <div class="col-lg-6 order-lg-1">
+            <p class="section-tag">Why Choose Us</p>
+            <h3>Creative solutions that combine design, comfort, and efficiency.</h3>
+            <p>From initial planning to final finishing, we focus on creating spaces that are beautiful, functional, and built to last. Our work reflects both visual appeal and real practical performance.</p>
+            <a href="/contact/" class="btn btn-primary">Book a Consultation</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .carousel-item {
+        background: #000;
+      }
+
+      .carousel-item img,
+      .hero-image {
+        display: block;
+        width: 100%;
+        height: 82vh;
+        object-fit: cover;
+        object-position: center;
+        filter: brightness(0.72);
+      }
+
+      .carousel-caption {
+        inset: 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        padding-bottom: 50px;
+      }
+
+      .hero-content {
+        background: rgba(0, 0, 0, 0.28);
+        padding: 30px 40px;
+        border-radius: 16px;
+        max-width: 700px;
+        text-align: center;
+      }
+
+      .gallery-item {
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
+      }
+
+      .gallery-image {
+        display: block;
+        width: 100%;
+        height: 320px;
+        object-fit: cover;
+        aspect-ratio: 4 / 3;
+      }
+
+      .gallery-text {
+        padding: 20px 18px 24px;
+      }
+
+      .gallery-text h5 {
+        margin-bottom: 8px;
+        font-weight: 700;
+      }
+
+      .gallery-text p {
+        margin: 0;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .feature-story {
+        background: #ffffff;
+        padding-top: 40px;
+        padding-bottom: 80px;
+      }
+
+      .feature-row {
+        margin-bottom: 30px;
+      }
+
+      .feature-image {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+        border-radius: 22px;
+        box-shadow: 0 15px 30px rgba(15, 23, 42, 0.12);
+      }
+
+      .section-tag {
+        color: #0d9488;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        font-size: 0.8rem;
+        font-weight: 700;
+        margin-bottom: 14px;
+      }
+
+      .feature-row h3 {
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: #111827;
+      }
+
+      .feature-row p {
+        color: #4b5563;
+        line-height: 1.8;
+      }
+
+      .feature-list {
+        padding-left: 18px;
+        margin-top: 20px;
+        color: #1f2937;
+        line-height: 2;
+      }
+
+      .second-row {
+        margin-top: 30px;
+      }
+    </section>
+  </main>
+{% endblock body %}
+

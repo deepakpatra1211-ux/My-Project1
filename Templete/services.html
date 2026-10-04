@@ -1,0 +1,212 @@
+{% extends "base.html" %}
+
+{% block title %}Services{% endblock title %}
+
+{% block body %}
+  <main class="services-page">
+    <section class="services-hero">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <p class="section-label">Our Services</p>
+            <h1>Creative solutions designed to help your business thrive.</h1>
+            <p class="lead">We provide modern digital services that combine strategy, technology, and design to make your brand stand out and grow with confidence.</p>
+            <a href="/contact/" class="btn btn-primary btn-lg">Book a Consultation</a>
+          </div>
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80" alt="Business growth" class="services-image">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-content py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label">What We Offer</p>
+          <h2>Flexible digital services for every stage of growth</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="service-card">
+              <h4>Web Design</h4>
+              <p>Beautiful, responsive websites built to showcase your brand and provide a smooth user experience.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h4>Brand Strategy</h4>
+              <p>Positioning, messaging, and visual direction tailored to help your business stand out clearly.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="service-card">
+              <h4>Business Growth</h4>
+              <p>Smart digital planning and polished execution that support engagement, trust, and long-term results.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-bottom py-5">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80" alt="Team discussion" class="bottom-image">
+          </div>
+          <div class="col-lg-6">
+            <p class="section-label">Why It Works</p>
+            <h2>We combine creativity with practical business thinking.</h2>
+            <p>Every service we provide is designed to create real value. We focus on clear communication, powerful presentation, and solutions that support your goals from the first idea to the final launch.</p>
+            <p>Our team works closely with clients to understand vision, refine direction, and deliver polished work that feels professional and purposeful.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="customer-feedback py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <p class="section-label">Customer Feedback</p>
+          <h2>What our clients say about working with us</h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>"The team transformed our website into something elegant and easy to use. Our brand finally looks professional and premium."</p>
+              <div class="client-meta">
+                <strong>Riya S.</strong>
+                <span>Business Owner</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>"Their design and strategy helped us communicate our value more clearly. We saw better engagement and stronger trust from customers."</p>
+              <div class="client-meta">
+                <strong>Arun M.</strong>
+                <span>Startup Founder</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>"The process was smooth, creative, and highly thoughtful. We loved how they balanced aesthetics with business goals."</p>
+              <div class="client-meta">
+                <strong>Neha P.</strong>
+                <span>Marketing Lead</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .services-page {
+        background: #f8f9fa;
+      }
+
+      .services-hero {
+        padding: 80px 0 40px;
+        background: linear-gradient(135deg, #eefcf6 0%, #ffffff 100%);
+      }
+
+      .section-label {
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: #198754;
+        font-weight: 700;
+        margin-bottom: 12px;
+        font-size: 0.8rem;
+      }
+
+      .services-hero h1,
+      .services-content h2,
+      .services-bottom h2 {
+        font-weight: 800;
+        margin-bottom: 16px;
+        color: #111827;
+      }
+
+      .services-image,
+      .bottom-image {
+        width: 100%;
+        height: 430px;
+        object-fit: cover;
+        border-radius: 20px;
+        box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+      }
+
+      .service-card {
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 28px 22px;
+        height: 100%;
+        box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      }
+
+      .service-card h4 {
+        margin-bottom: 12px;
+        font-weight: 700;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: #555;
+      }
+
+      .customer-feedback {
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      .testimonial-card {
+        background: linear-gradient(180deg, #ffffff 0%, #f3f7ff 100%);
+        border: 1px solid #e5e7eb;
+        border-radius: 20px;
+        padding: 28px 22px;
+        height: 100%;
+        box-shadow: 0 12px 30px rgba(17, 24, 39, 0.06);
+      }
+
+      .stars {
+        color: #fbbf24;
+        letter-spacing: 2px;
+        margin-bottom: 14px;
+        font-size: 1.1rem;
+      }
+
+      .testimonial-card p {
+        color: #4b5563;
+        line-height: 1.8;
+        margin-bottom: 22px;
+      }
+
+      .client-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+
+      .client-meta strong {
+        color: #111827;
+      }
+
+      .client-meta span {
+        color: #6b7280;
+        font-size: 0.9rem;
+      }
+    </section>
+  </main>
+{% endblock body %}
